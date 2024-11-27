@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل حساب جديد</title>
+    <link rel="icon" href="./assets/logo/logo.png">
+    <!-- style css -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f443;
+            background: url(./assets/images/4k.jpg)  no-repeat;
+            background-size: cover;
+        }
+        
+        .register-container {
+            background-color: #ffffff27;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        
+        .register-container h2 {
+            margin-bottom: 20px;
+        }
+        
+        .register-container input[type="text"],
+        .register-container input[type="email"],
+        .register-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddddddef;
+            border-radius: 5px;
+            background-color: #ffffff67;
+        }
+        
+        .register-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4caf4f77;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .register-container button:hover {
+            background-color: #45a049;
+        }
+        
+        .register-container p {
+            margin-top: 15px;
+            color: #555;
+        }
+        
+        .register-container a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        .register-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- end style css -->
+</head>
+<body>
+
+<div class="register-container">
+    <h2>تسجيل حساب جديد</h2>
+    <!-- start form -->
+    <form action="#" method="post">
+        <input type="text" name="username" placeholder="اسم المستخدم" required>
+        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+        <input type="password" name="password" placeholder="كلمة المرور" required>
+        <input type="password" name="confirm_password" placeholder="تأكيد كلمة المرور" required>
+        <button type="submit">تسجيل</button>
+    </form>
+    <p>لديك حساب بالفعل؟ <a href="./sign in.html" style="color: #fff;">تسجيل الدخول</a></p>
+</div>
+<!-- end form -->
+</body>
+</html>

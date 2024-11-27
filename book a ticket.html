@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز تذاكر السينما</title>
+    <link rel="stylesheet" href="./assets/css/Book a ticket.css">
+    <link rel="icon" href="./assets/logo/logo.png">
+</head>
+<body>
+    <!-- start Book A Ticket -->
+    <div class="container">
+        <h1>حجز تذاكر السينما</h1>
+        
+        <form id="bookingForm">
+            <label for="movie">اختر الفيلم:</label>
+            <select id="movie" required>
+                <option value="50">فيلم 1 - 50 جنيه</option>
+                <option value="70">فيلم 2 - 70 جنيه</option>
+                <option value="100">فيلم 3 - 100 جنيه</option>
+            </select>
+
+            <label for="date">اختر تاريخ العرض:</label>
+            <input type="date" id="date" required>
+
+            <label for="tickets">عدد التذاكر:</label>
+            <input type="number" id="tickets" min="1" max="10" value="1" required>
+
+            <button type="button" onclick="calculateTotal()">احجز الآن</button>
+        </form>
+        
+        <div id="total"></div>
+    </div>
+    <!-- end of a Book A Ticket -->
+    <script src="./assets/js/Book a ticket.js"></script>
+</body>
+</html>
